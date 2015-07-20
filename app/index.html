@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- React -->
+    <script src="https://fb.me/react-0.13.3.min.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+    <!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+
+<!-- Firebase Simple Login -->
+<script src="https://cdn.firebase.com/js/simple-login/1.6.4/firebase-simple-login.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://fb.me/react-0.13.3.min.js"></script>
+<script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
+  <meta charset=utf-8>
+  <title>Voteit</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <style>
+    body {
+      background: #FAFAFA;
+    }
+    .badge-success {
+      background: #5cb85c;
+    }
+    .badge-danger {
+      background: #d9534f;
+    }
+    .list-group-item {
+      padding: 20px 15px;
+    }
+    .form-control,
+    .btn,
+    .badge {
+      border-radius: 0;
+    }
+    #feedForm {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h2>VoteApp</h2>
+  </div>
+
+  <!--
+
+    <Feed>
+
+      <ShowAddButton />
+      <FeedForm />
+
+      <FeedList>
+        <FeedItem />
+      </FeedList>
+
+    </Feed>
+
+  -->
+  <div id="dialog-register" title="Register new user">
+    <form>
+        <fieldset>
+            <label for="name">Email</label>
+            <input type="text" name="email" id="register-email" class="text ui-widget-content ui-corner-all" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="register-password" value="" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+    </form>
+</div>
+<div id="dialog-login" title="Login user">
+    <form>
+        <fieldset>
+            <label for="name">Email</label>
+            <input type="text" name="email" id="login-email" class="text ui-widget-content ui-corner-all" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="login-password" value="" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+    </form>
+</div>
+<button id="opener-register">Register</button>
+<button id="opener-login">Login</button>
+<button id="opener-logout">Logout</button>
+<br />
+<input id="data" />
+
+  <div id="app"></div>
+
+  <script src="/dist/js/main.js"></script>
+
+
+</body>
+
+</html>
